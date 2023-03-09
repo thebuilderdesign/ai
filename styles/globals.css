@@ -1,0 +1,55 @@
+:root {
+  --text-shadow:drop-shadow(3px 3px 3px black);
+
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* background-color: #181d29;
+  */
+
+  background-image: url('../public/bakcgorund.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden !important;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.global-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.glass-card {
+  width: 92vw;
+  height: 90vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.281);
+  box-shadow: 4px 5px 20px rgba(0, 0, 0, 0.552);
+  backdrop-filter: blur(20px) saturate(150%);
+}
+
+
+@media screen and (max-width: 768px) {
+ .glass-card {
+  height: 95vh;
+ }    
+}

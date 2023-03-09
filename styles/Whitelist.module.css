@@ -1,0 +1,70 @@
+.whitelist_container {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.whitelist_heading {
+    filter: var(--text-shadow);
+    font-size: 6rem;
+    padding: 0rem 2rem;
+    border-radius: 20px;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.whitelist_info {
+    margin: 0;
+    padding: 0;
+    margin-top: -6rem;
+    font-size: 20px;
+    filter: var(--text-shadow);
+}
+
+.whitelist_btn {
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(5, 5, 39, 0.585);
+    backdrop-filter: blur(20px);
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.579);
+    border-radius: 20px;
+    font-size: 2rem;
+    padding:1rem 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.whitelist_btn:hover {
+    transform: scale(1.05);
+    background-color:rgba(5, 5, 39, 0.8) ;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .whitelist_container {
+        height: 50%;
+    }
+    
+    .whitelist_heading {
+        margin: 0;
+        margin-top: 5rem;
+        font-size: 2.8rem;
+    }
+    .whitelist_info {
+        font-size: 12px;
+    }
+
+    .whitelist_btn {
+        font-size: 1.2rem;
+        padding: 12px 18px;
+        margin-top: -5rem;
+    }
+}

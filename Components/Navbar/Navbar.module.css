@@ -1,0 +1,84 @@
+.logo {
+    background: -webkit-linear-gradient(to right, #ff6f00, #fffb00 );  /* Chrome 10-25, Safari 5.1-6 */
+    background: white; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-position: center center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: var(--text-shadow);
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 5fr 2fr 3fr;
+    place-content: center;
+    place-items: center;
+    padding: 0;
+    margin: 0;
+    margin-left: -2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.navbar_link {
+    width: fit-content;
+    cursor: pointer;
+    color: white;
+    filter: var(--text-shadow);
+    transition: all 0.2s;
+}
+
+.navbar_link:hover {
+    transform: scale(1.02);
+    filter: 2px 2px 15px black;
+}
+
+.connect_btn {
+    background: dark;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    border: 2px solid dark;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    color: dark;
+    background-color: dark;
+    backdrop-filter: blur(20px);
+    font-weight: 600;
+    padding: 8px 12px;
+    box-shadow: 3px 4px 12px rgba(0, 0, 0, 0.579);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.connect_btn:hover {
+    transform: scale(1.03);
+    background-color: rgba(5, 5, 39, 0.8);
+}
+
+@media screen and (max-width: 768px) {
+    .logo {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .navbar {
+        margin: 0;
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.8rem;
+        margin: none;
+    }
+    .navbar_link {
+        font-size: 0.6rem;
+    }
+
+    .connect_btn {
+        width: fit-content;
+        font-size: .6rem;
+        padding: 5px 10px;
+    }
+}
